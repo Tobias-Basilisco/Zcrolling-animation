@@ -1,6 +1,7 @@
-/*! Flickity v2.2.1
-https://flickity.metafizzy.co
----------------------------------------------- */
+* {
+    margin:0;
+    padding: 0;
+}
 
 .flickity-enabled {
     position: relative
@@ -322,16 +323,7 @@ section {
     display: block
 }
 
-body {
-    margin: 0;
-    font-family: Graphik LG, Arial, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Helvetica Neue, sans-serif;
-    font-size: 1rem;
-    font-weight: 400;
-    line-height: 1.5;
-    color: #000;
-    text-align: left;
-    background-color: #fff
-}
+
 
 [tabindex="-1"]:focus {
     outline: 0 !important
@@ -1043,13 +1035,9 @@ mark {
     margin-left: auto
 }
 
-.product-main .summary,
-.row,
-.woocommerce-account .woocommerce-EditAccountForm,
-.woocommerce-checkout .woocommerce-additional-fields__field-wrapper,
-.woocommerce-checkout .woocommerce-address-fields__field-wrapper,
-.woocommerce-checkout .woocommerce-billing-fields__field-wrapper,
-.woocommerce-checkout .woocommerce-shipping-fields__field-wrapper {
+
+.row
+{
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -1064,158 +1052,19 @@ mark {
     margin-left: 0
 }
 
-.no-gutters>.col,
-.no-gutters>[class*=col-] {
-    padding-right: 0;
-    padding-left: 0
-}
 
-.col,
-.col-1,
-.col-2,
-.col-3,
-.col-4,
-.col-5,
-.col-6,
-.col-7,
-.col-8,
-.col-9,
-.col-10,
-.col-11,
+
+
 .col-12,
-.col-auto,
-.col-lg,
-.col-lg-1,
-.col-lg-2,
-.col-lg-3,
-.col-lg-4,
-.col-lg-5,
-.col-lg-6,
-.col-lg-7,
-.col-lg-8,
-.col-lg-9,
-.col-lg-10,
-.col-lg-11,
-.col-lg-12,
-.col-lg-auto,
-.col-md,
-.col-md-1,
-.col-md-2,
-.col-md-3,
-.col-md-4,
-.col-md-5,
-.col-md-6,
 .col-md-7,
 .col-md-8,
-.col-md-9,
-.col-md-10,
-.col-md-11,
-.col-md-12,
-.col-md-auto,
-.col-sm,
-.col-sm-1,
-.col-sm-2,
-.col-sm-3,
-.col-sm-4,
-.col-sm-5,
-.col-sm-6,
-.col-sm-7,
-.col-sm-8,
-.col-sm-9,
-.col-sm-10,
-.col-sm-11,
-.col-sm-12,
-.col-sm-auto,
-.col-xl,
-.col-xl-1,
-.col-xl-2,
-.col-xl-3,
-.col-xl-4,
-.col-xl-5,
-.col-xl-6,
-.col-xl-7,
-.col-xl-8,
-.col-xl-9,
-.col-xl-10,
-.col-xl-11,
-.col-xl-12,
-.col-xl-auto,
-.col-xxl,
-.col-xxl-1,
-.col-xxl-2,
-.col-xxl-3,
-.col-xxl-4,
-.col-xxl-5,
-.col-xxl-6,
-.col-xxl-7,
-.col-xxl-8,
-.col-xxl-9,
-.col-xxl-10,
-.col-xxl-11,
-.col-xxl-12,
-.col-xxl-auto,
-.col-xxxl,
-.col-xxxl-1,
-.col-xxxl-2,
-.col-xxxl-3,
-.col-xxxl-4,
-.col-xxxl-5,
-.col-xxxl-6,
-.col-xxxl-7,
-.col-xxxl-8,
-.col-xxxl-9,
-.col-xxxl-10,
-.col-xxxl-11,
-.col-xxxl-12,
-.col-xxxl-auto,
-.col-xxxxl,
-.col-xxxxl-1,
-.col-xxxxl-2,
-.col-xxxxl-3,
-.col-xxxxl-4,
-.col-xxxxl-5,
-.col-xxxxl-6,
-.col-xxxxl-7,
-.col-xxxxl-8,
-.col-xxxxl-9,
-.col-xxxxl-10,
-.col-xxxxl-11,
-.col-xxxxl-12,
-.col-xxxxl-auto,
-.woocommerce-account .woocommerce-EditAccountForm .form-row,
-.woocommerce-account .woocommerce-EditAccountForm .form-row-first,
-.woocommerce-account .woocommerce-EditAccountForm .form-row-last,
-.woocommerce-account .woocommerce-EditAccountForm fieldset,
-.woocommerce-checkout .woocommerce-additional-fields__field-wrapper .form-row#account_password_field,
-.woocommerce-checkout .woocommerce-additional-fields__field-wrapper .form-row#billing_document_field,
-.woocommerce-checkout .woocommerce-additional-fields__field-wrapper .form-row.notes,
-.woocommerce-checkout .woocommerce-additional-fields__field-wrapper .form-row:not(.notes):not(#billing_document_field):not(#account_password_field),
-.woocommerce-checkout .woocommerce-address-fields__field-wrapper .form-row#account_password_field,
-.woocommerce-checkout .woocommerce-address-fields__field-wrapper .form-row#billing_document_field,
-.woocommerce-checkout .woocommerce-address-fields__field-wrapper .form-row.notes,
-.woocommerce-checkout .woocommerce-address-fields__field-wrapper .form-row:not(.notes):not(#billing_document_field):not(#account_password_field),
-.woocommerce-checkout .woocommerce-billing-fields__field-wrapper .form-row#account_password_field,
-.woocommerce-checkout .woocommerce-billing-fields__field-wrapper .form-row#billing_document_field,
-.woocommerce-checkout .woocommerce-billing-fields__field-wrapper .form-row.notes,
-.woocommerce-checkout .woocommerce-billing-fields__field-wrapper .form-row:not(.notes):not(#billing_document_field):not(#account_password_field),
-.woocommerce-checkout .woocommerce-shipping-fields__field-wrapper .form-row#account_password_field,
-.woocommerce-checkout .woocommerce-shipping-fields__field-wrapper .form-row#billing_document_field,
-.woocommerce-checkout .woocommerce-shipping-fields__field-wrapper .form-row.notes,
-.woocommerce-checkout .woocommerce-shipping-fields__field-wrapper .form-row:not(.notes):not(#billing_document_field):not(#account_password_field) {
-    position: relative;
+.col-xl-5 {position: relative;
     width: 100%;
     padding-right: 15px;
     padding-left: 15px
 }
 
-.col {
-    -ms-flex-preferred-size: 0;
-    flex-basis: 0%;
-    -webkit-box-flex: 1;
-    -ms-flex-positive: 1;
-    flex-grow: 1;
-    max-width: 100%
-}
+
 
 .col-auto {
     -ms-flex: 0 0 auto;
@@ -1320,25 +1169,7 @@ mark {
     max-width: 91.66667%
 }
 
-.col-12,
-.woocommerce-account .woocommerce-EditAccountForm .form-row,
-.woocommerce-account .woocommerce-EditAccountForm fieldset,
-.woocommerce-checkout .woocommerce-additional-fields__field-wrapper .form-row#account_password_field,
-.woocommerce-checkout .woocommerce-additional-fields__field-wrapper .form-row#billing_document_field,
-.woocommerce-checkout .woocommerce-additional-fields__field-wrapper .form-row.notes,
-.woocommerce-checkout .woocommerce-additional-fields__field-wrapper .form-row:not(.notes):not(#billing_document_field):not(#account_password_field),
-.woocommerce-checkout .woocommerce-address-fields__field-wrapper .form-row#account_password_field,
-.woocommerce-checkout .woocommerce-address-fields__field-wrapper .form-row#billing_document_field,
-.woocommerce-checkout .woocommerce-address-fields__field-wrapper .form-row.notes,
-.woocommerce-checkout .woocommerce-address-fields__field-wrapper .form-row:not(.notes):not(#billing_document_field):not(#account_password_field),
-.woocommerce-checkout .woocommerce-billing-fields__field-wrapper .form-row#account_password_field,
-.woocommerce-checkout .woocommerce-billing-fields__field-wrapper .form-row#billing_document_field,
-.woocommerce-checkout .woocommerce-billing-fields__field-wrapper .form-row.notes,
-.woocommerce-checkout .woocommerce-billing-fields__field-wrapper .form-row:not(.notes):not(#billing_document_field):not(#account_password_field),
-.woocommerce-checkout .woocommerce-shipping-fields__field-wrapper .form-row#account_password_field,
-.woocommerce-checkout .woocommerce-shipping-fields__field-wrapper .form-row#billing_document_field,
-.woocommerce-checkout .woocommerce-shipping-fields__field-wrapper .form-row.notes,
-.woocommerce-checkout .woocommerce-shipping-fields__field-wrapper .form-row:not(.notes):not(#billing_document_field):not(#account_password_field) {
+.col-12 {
     -webkit-box-flex: 0;
     -ms-flex: 0 0 100%;
     flex: 0 0 100%;
@@ -3319,11 +3150,7 @@ textarea.woocommerce-Input {
     margin-left: -5px
 }
 
-.form-row>.col,
-.form-row>[class*=col-] {
-    padding-right: 5px;
-    padding-left: 5px
-}
+
 
 .form-check {
     position: relative;
@@ -6474,27 +6301,7 @@ label.checkbox>input.is-invalid:focus:not(:checked)~input+span:before {
     }
 }
 
-.btn,
-.cart-collaterals .checkout-button,
-.minicart .checkout,
-.minicart .woocommerce-mini-cart__buttons:not(.has-checkout-button) .button,
-.newsletter-modal .mailchimp-form__field--subscribe button,
-.single_add_to_cart_button,
-.woocommerce-account .addresses a.edit,
-.woocommerce-account .ywsbs-change-status-buttons-wrapper button,
-.woocommerce-address-fields .button,
-.woocommerce-Addresses a.edit,
-.woocommerce-Button,
-.woocommerce-cart-form .coupon .button,
-.woocommerce-checkout .place-order button#place_order,
-.woocommerce-columns--addresses a.edit,
-.woocommerce-form-login__submit,
-.woocommerce-form-register__submit,
-.woocommerce-MyAccount-content .form-link-gift-card-to-user button,
-.woocommerce-MyAccount-content .yith-add-new-gc-my-account-button,
-.ywdpd_popup #ywdpd_popup_container .ywdpd_step1 .ywdpd_btn_container a,
-.ywdpd_popup .single_add_to_cart_button,
-body.assorted_product .abp_products_footer .button {
+.btn {
     display: inline-block;
     font-weight: 400;
     color: #000;
@@ -6518,497 +6325,33 @@ body.assorted_product .abp_products_footer .button {
 }
 
 @media (prefers-reduced-motion:reduce) {
-    .btn,
-    .cart-collaterals .checkout-button,
-    .minicart .checkout,
-    .minicart .woocommerce-mini-cart__buttons:not(.has-checkout-button) .button,
-    .newsletter-modal .mailchimp-form__field--subscribe button,
-    .single_add_to_cart_button,
-    .woocommerce-account .addresses a.edit,
-    .woocommerce-account .ywsbs-change-status-buttons-wrapper button,
-    .woocommerce-address-fields .button,
-    .woocommerce-Addresses a.edit,
-    .woocommerce-Button,
-    .woocommerce-cart-form .coupon .button,
-    .woocommerce-checkout .place-order button#place_order,
-    .woocommerce-columns--addresses a.edit,
-    .woocommerce-form-login__submit,
-    .woocommerce-form-register__submit,
-    .woocommerce-MyAccount-content .form-link-gift-card-to-user button,
-    .woocommerce-MyAccount-content .yith-add-new-gc-my-account-button,
-    .ywdpd_popup #ywdpd_popup_container .ywdpd_step1 .ywdpd_btn_container a,
-    .ywdpd_popup .single_add_to_cart_button,
-    body.assorted_product .abp_products_footer .button {
+    .btn{
         -webkit-transition: none;
         -o-transition: none;
         transition: none
     }
 }
 
-.btn:hover,
-.cart-collaterals .checkout-button:hover,
-.minicart .checkout:hover,
-.minicart .woocommerce-mini-cart__buttons:not(.has-checkout-button) .button:hover,
-.newsletter-modal .mailchimp-form__field--subscribe button:hover,
-.single_add_to_cart_button:hover,
-.woocommerce-account .addresses a.edit:hover,
-.woocommerce-account .ywsbs-change-status-buttons-wrapper button:hover,
-.woocommerce-address-fields .button:hover,
-.woocommerce-Addresses a.edit:hover,
-.woocommerce-Button:hover,
-.woocommerce-cart-form .coupon .button:hover,
-.woocommerce-checkout .place-order button#place_order:hover,
-.woocommerce-columns--addresses a.edit:hover,
-.woocommerce-form-login__submit:hover,
-.woocommerce-form-register__submit:hover,
-.woocommerce-MyAccount-content .form-link-gift-card-to-user button:hover,
-.woocommerce-MyAccount-content .yith-add-new-gc-my-account-button:hover,
-.ywdpd_popup #ywdpd_popup_container .ywdpd_step1 .ywdpd_btn_container a:hover,
-body.assorted_product .abp_products_footer .button:hover {
-    color: #000;
-    text-decoration: none
-}
 
-.btn.focus,
-.btn:focus,
-.cart-collaterals .checkout-button:focus,
-.cart-collaterals .focus.checkout-button,
-.focus.single_add_to_cart_button,
-.focus.woocommerce-Button,
-.focus.woocommerce-form-login__submit,
-.focus.woocommerce-form-register__submit,
-.minicart .checkout:focus,
-.minicart .focus.checkout,
-.minicart .woocommerce-mini-cart__buttons:not(.has-checkout-button) .button:focus,
-.minicart .woocommerce-mini-cart__buttons:not(.has-checkout-button) .focus.button,
-.newsletter-modal .mailchimp-form__field--subscribe button.focus,
-.newsletter-modal .mailchimp-form__field--subscribe button:focus,
-.single_add_to_cart_button:focus,
-.woocommerce-account .addresses a.edit:focus,
-.woocommerce-account .addresses a.focus.edit,
-.woocommerce-account .ywsbs-change-status-buttons-wrapper button.focus,
-.woocommerce-account .ywsbs-change-status-buttons-wrapper button:focus,
-.woocommerce-address-fields .button:focus,
-.woocommerce-address-fields .focus.button,
-.woocommerce-Addresses a.edit:focus,
-.woocommerce-Addresses a.focus.edit,
-.woocommerce-Button:focus,
-.woocommerce-cart-form .coupon .button:focus,
-.woocommerce-cart-form .coupon .focus.button,
-.woocommerce-checkout .place-order button#place_order:focus,
-.woocommerce-checkout .place-order button.focus#place_order,
-.woocommerce-columns--addresses a.edit:focus,
-.woocommerce-columns--addresses a.focus.edit,
-.woocommerce-form-login__submit:focus,
-.woocommerce-form-register__submit:focus,
-.woocommerce-MyAccount-content .focus.yith-add-new-gc-my-account-button,
-.woocommerce-MyAccount-content .form-link-gift-card-to-user button.focus,
-.woocommerce-MyAccount-content .form-link-gift-card-to-user button:focus,
-.woocommerce-MyAccount-content .yith-add-new-gc-my-account-button:focus,
-.ywdpd_popup #ywdpd_popup_container .ywdpd_step1 .ywdpd_btn_container a.focus,
-.ywdpd_popup #ywdpd_popup_container .ywdpd_step1 .ywdpd_btn_container a:focus,
-body.assorted_product .abp_products_footer .button:focus,
-body.assorted_product .abp_products_footer .focus.button {
-    outline: 0;
-    -webkit-box-shadow: 0;
-    box-shadow: 0
-}
 
-.btn.disabled,
-.btn:disabled,
-.cart-collaterals .checkout-button:disabled,
-.cart-collaterals .disabled.checkout-button,
-.disabled.single_add_to_cart_button,
-.disabled.woocommerce-Button,
-.disabled.woocommerce-form-login__submit,
-.disabled.woocommerce-form-register__submit,
-.minicart .checkout:disabled,
-.minicart .disabled.checkout,
-.minicart .woocommerce-mini-cart__buttons:not(.has-checkout-button) .button:disabled,
-.minicart .woocommerce-mini-cart__buttons:not(.has-checkout-button) .disabled.button,
-.newsletter-modal .mailchimp-form__field--subscribe button.disabled,
-.newsletter-modal .mailchimp-form__field--subscribe button:disabled,
-.single_add_to_cart_button:disabled,
-.woocommerce-account .addresses a.disabled.edit,
-.woocommerce-account .addresses a.edit:disabled,
-.woocommerce-account .ywsbs-change-status-buttons-wrapper button.disabled,
-.woocommerce-account .ywsbs-change-status-buttons-wrapper button:disabled,
-.woocommerce-address-fields .button:disabled,
-.woocommerce-address-fields .disabled.button,
-.woocommerce-Addresses a.disabled.edit,
-.woocommerce-Addresses a.edit:disabled,
-.woocommerce-Button:disabled,
-.woocommerce-cart-form .coupon .button:disabled,
-.woocommerce-cart-form .coupon .disabled.button,
-.woocommerce-checkout .place-order button#place_order:disabled,
-.woocommerce-checkout .place-order button.disabled#place_order,
-.woocommerce-columns--addresses a.disabled.edit,
-.woocommerce-columns--addresses a.edit:disabled,
-.woocommerce-form-login__submit:disabled,
-.woocommerce-form-register__submit:disabled,
-.woocommerce-MyAccount-content .disabled.yith-add-new-gc-my-account-button,
-.woocommerce-MyAccount-content .form-link-gift-card-to-user button.disabled,
-.woocommerce-MyAccount-content .form-link-gift-card-to-user button:disabled,
-.woocommerce-MyAccount-content .yith-add-new-gc-my-account-button:disabled,
-.ywdpd_popup #ywdpd_popup_container .ywdpd_step1 .ywdpd_btn_container a.disabled,
-.ywdpd_popup #ywdpd_popup_container .ywdpd_step1 .ywdpd_btn_container a:disabled,
-body.assorted_product .abp_products_footer .button:disabled,
-body.assorted_product .abp_products_footer .disabled.button {
-    opacity: .65
-}
 
-.cart-collaterals a.disabled.checkout-button,
-.cart-collaterals fieldset:disabled a.checkout-button,
-.minicart .woocommerce-mini-cart__buttons:not(.has-checkout-button) a.disabled.button,
-.minicart .woocommerce-mini-cart__buttons:not(.has-checkout-button) fieldset:disabled a.button,
-.minicart a.disabled.checkout,
-.minicart fieldset:disabled a.checkout,
-.woocommerce-account .addresses a.disabled.edit,
-.woocommerce-account .addresses fieldset:disabled a.edit,
-.woocommerce-address-fields a.disabled.button,
-.woocommerce-address-fields fieldset:disabled a.button,
-.woocommerce-Addresses a.disabled.edit,
-.woocommerce-Addresses fieldset:disabled a.edit,
-.woocommerce-cart-form .coupon a.disabled.button,
-.woocommerce-cart-form .coupon fieldset:disabled a.button,
-.woocommerce-columns--addresses a.disabled.edit,
-.woocommerce-columns--addresses fieldset:disabled a.edit,
-.woocommerce-MyAccount-content a.disabled.yith-add-new-gc-my-account-button,
-.woocommerce-MyAccount-content fieldset:disabled a.yith-add-new-gc-my-account-button,
-.ywdpd_popup #ywdpd_popup_container .ywdpd_step1 .ywdpd_btn_container a.disabled,
-.ywdpd_popup #ywdpd_popup_container .ywdpd_step1 .ywdpd_btn_container fieldset:disabled a,
-a.btn.disabled,
-a.disabled.single_add_to_cart_button,
-a.disabled.woocommerce-Button,
-a.disabled.woocommerce-form-login__submit,
-a.disabled.woocommerce-form-register__submit,
-body.assorted_product .abp_products_footer a.disabled.button,
-body.assorted_product .abp_products_footer fieldset:disabled a.button,
-fieldset:disabled .cart-collaterals a.checkout-button,
-fieldset:disabled .minicart .woocommerce-mini-cart__buttons:not(.has-checkout-button) a.button,
-fieldset:disabled .minicart a.checkout,
-fieldset:disabled .woocommerce-account .addresses a.edit,
-fieldset:disabled .woocommerce-address-fields a.button,
-fieldset:disabled .woocommerce-Addresses a.edit,
-fieldset:disabled .woocommerce-cart-form .coupon a.button,
-fieldset:disabled .woocommerce-columns--addresses a.edit,
-fieldset:disabled .woocommerce-MyAccount-content a.yith-add-new-gc-my-account-button,
-fieldset:disabled .ywdpd_popup #ywdpd_popup_container .ywdpd_step1 .ywdpd_btn_container a,
-fieldset:disabled a.btn,
-fieldset:disabled a.single_add_to_cart_button,
-fieldset:disabled a.woocommerce-Button,
-fieldset:disabled a.woocommerce-form-login__submit,
-fieldset:disabled a.woocommerce-form-register__submit,
-fieldset:disabled body.assorted_product .abp_products_footer a.button {
-    pointer-events: none
-}
+
+
+
+
 
 .btn--primary,
 .btn--primary:hover,
 .btn-primary,
-.btn-primary:hover,
-.cart-collaterals .checkout-button,
-.cart-collaterals .checkout-button:hover,
-.minicart .checkout,
-.minicart .checkout:hover,
-.minicart .woocommerce-mini-cart__buttons:not(.has-checkout-button) .button,
-.minicart .woocommerce-mini-cart__buttons:not(.has-checkout-button) .button:hover,
-.newsletter-modal .mailchimp-form__field--subscribe button,
-.newsletter-modal .mailchimp-form__field--subscribe button:hover,
-.single_add_to_cart_button,
-.single_add_to_cart_button:hover,
-.woocommerce-account .addresses a.edit,
-.woocommerce-account .addresses a.edit:hover,
-.woocommerce-account .ywsbs-change-status-buttons-wrapper button,
-.woocommerce-account .ywsbs-change-status-buttons-wrapper button:hover,
-.woocommerce-address-fields .button,
-.woocommerce-address-fields .button:hover,
-.woocommerce-Address a.edit,
-.woocommerce-Address a.edit:hover,
-.woocommerce-Addresses a.edit,
-.woocommerce-Addresses a.edit:hover,
-.woocommerce-Button,
-.woocommerce-Button:hover,
-.woocommerce-cart-form .coupon .button,
-.woocommerce-cart-form .coupon .button:hover,
-.woocommerce-checkout .place-order button#place_order,
-.woocommerce-checkout .place-order button#place_order:hover,
-.woocommerce-column--billing-address a.edit,
-.woocommerce-column--billing-address a.edit:hover,
-.woocommerce-column--shipping-address a.edit,
-.woocommerce-column--shipping-address a.edit:hover,
-.woocommerce-columns--addresses a.edit,
-.woocommerce-columns--addresses a.edit:hover,
-.woocommerce-form-login__submit,
-.woocommerce-form-login__submit:hover,
-.woocommerce-form-register__submit,
-.woocommerce-form-register__submit:hover,
-.woocommerce-MyAccount-content .form-link-gift-card-to-user button,
-.woocommerce-MyAccount-content .form-link-gift-card-to-user button:hover,
-.woocommerce-MyAccount-content .yith-add-new-gc-my-account-button,
-.woocommerce-MyAccount-content .yith-add-new-gc-my-account-button:hover,
-.ywdpd_popup #ywdpd_popup_container .ywdpd_step1 .ywdpd_btn_container a,
-.ywdpd_popup #ywdpd_popup_container .ywdpd_step1 .ywdpd_btn_container a:hover,
-.ywdpd_popup .single_add_to_cart_button,
-body.assorted_product .abp_products_footer .button,
-body.assorted_product .abp_products_footer .button:hover {
+.btn-primary:hover {
     color: #fff;
     background-color: #000;
     border-color: #000
 }
 
-.btn--primary:focus,
-.btn-primary.focus,
-.btn-primary:focus,
-.cart-collaterals .checkout-button:focus,
-.cart-collaterals .focus.checkout-button,
-.focus.btn--primary,
-.focus.single_add_to_cart_button,
-.focus.woocommerce-Button,
-.focus.woocommerce-form-login__submit,
-.focus.woocommerce-form-register__submit,
-.minicart .checkout:focus,
-.minicart .focus.checkout,
-.minicart .woocommerce-mini-cart__buttons:not(.has-checkout-button) .button:focus,
-.minicart .woocommerce-mini-cart__buttons:not(.has-checkout-button) .focus.button,
-.newsletter-modal .mailchimp-form__field--subscribe button.focus,
-.newsletter-modal .mailchimp-form__field--subscribe button:focus,
-.single_add_to_cart_button:focus,
-.woocommerce-account .addresses a.edit:focus,
-.woocommerce-account .addresses a.focus.edit,
-.woocommerce-account .ywsbs-change-status-buttons-wrapper button.focus,
-.woocommerce-account .ywsbs-change-status-buttons-wrapper button:focus,
-.woocommerce-address-fields .button:focus,
-.woocommerce-address-fields .focus.button,
-.woocommerce-Address a.edit:focus,
-.woocommerce-Address a.focus.edit,
-.woocommerce-Addresses a.edit:focus,
-.woocommerce-Addresses a.focus.edit,
-.woocommerce-Button:focus,
-.woocommerce-cart-form .coupon .button:focus,
-.woocommerce-cart-form .coupon .focus.button,
-.woocommerce-checkout .place-order button#place_order:focus,
-.woocommerce-checkout .place-order button.focus#place_order,
-.woocommerce-column--billing-address a.edit:focus,
-.woocommerce-column--billing-address a.focus.edit,
-.woocommerce-column--shipping-address a.edit:focus,
-.woocommerce-column--shipping-address a.focus.edit,
-.woocommerce-columns--addresses a.edit:focus,
-.woocommerce-columns--addresses a.focus.edit,
-.woocommerce-form-login__submit:focus,
-.woocommerce-form-register__submit:focus,
-.woocommerce-MyAccount-content .focus.yith-add-new-gc-my-account-button,
-.woocommerce-MyAccount-content .form-link-gift-card-to-user button.focus,
-.woocommerce-MyAccount-content .form-link-gift-card-to-user button:focus,
-.woocommerce-MyAccount-content .yith-add-new-gc-my-account-button:focus,
-.ywdpd_popup #ywdpd_popup_container .ywdpd_step1 .ywdpd_btn_container a.focus,
-.ywdpd_popup #ywdpd_popup_container .ywdpd_step1 .ywdpd_btn_container a:focus,
-body.assorted_product .abp_products_footer .button:focus,
-body.assorted_product .abp_products_footer .focus.button {
-    -webkit-box-shadow: 0 0 0 .2rem rgba(38, 38, 38, .5);
-    box-shadow: 0 0 0 .2rem rgba(38, 38, 38, .5)
-}
 
-.btn--primary:disabled,
-.btn--primary:not(:disabled):not(.disabled).active,
-.btn--primary:not(:disabled):not(.disabled):active,
-.btn-primary.disabled,
-.btn-primary:disabled,
-.btn-primary:not(:disabled):not(.disabled).active,
-.btn-primary:not(:disabled):not(.disabled):active,
-.cart-collaterals .checkout-button:disabled,
-.cart-collaterals .checkout-button:not(:disabled):not(.disabled).active,
-.cart-collaterals .checkout-button:not(:disabled):not(.disabled):active,
-.cart-collaterals .disabled.checkout-button,
-.cart-collaterals .show>.dropdown-toggle.checkout-button,
-.disabled.btn--primary,
-.disabled.single_add_to_cart_button,
-.disabled.woocommerce-Button,
-.disabled.woocommerce-form-login__submit,
-.disabled.woocommerce-form-register__submit,
-.minicart .checkout:disabled,
-.minicart .checkout:not(:disabled):not(.disabled).active,
-.minicart .checkout:not(:disabled):not(.disabled):active,
-.minicart .disabled.checkout,
-.minicart .show>.dropdown-toggle.checkout,
-.minicart .woocommerce-mini-cart__buttons:not(.has-checkout-button) .button:disabled,
-.minicart .woocommerce-mini-cart__buttons:not(.has-checkout-button) .button:not(:disabled):not(.disabled).active,
-.minicart .woocommerce-mini-cart__buttons:not(.has-checkout-button) .button:not(:disabled):not(.disabled):active,
-.minicart .woocommerce-mini-cart__buttons:not(.has-checkout-button) .disabled.button,
-.minicart .woocommerce-mini-cart__buttons:not(.has-checkout-button) .show>.dropdown-toggle.button,
-.newsletter-modal .mailchimp-form__field--subscribe .show>button.dropdown-toggle,
-.newsletter-modal .mailchimp-form__field--subscribe button.disabled,
-.newsletter-modal .mailchimp-form__field--subscribe button:disabled,
-.newsletter-modal .mailchimp-form__field--subscribe button:not(:disabled):not(.disabled).active,
-.newsletter-modal .mailchimp-form__field--subscribe button:not(:disabled):not(.disabled):active,
-.show>.btn-primary.dropdown-toggle,
-.show>.dropdown-toggle.btn--primary,
-.show>.dropdown-toggle.single_add_to_cart_button,
-.show>.dropdown-toggle.woocommerce-Button,
-.show>.dropdown-toggle.woocommerce-form-login__submit,
-.show>.dropdown-toggle.woocommerce-form-register__submit,
-.single_add_to_cart_button:disabled,
-.single_add_to_cart_button:not(:disabled):not(.disabled).active,
-.single_add_to_cart_button:not(:disabled):not(.disabled):active,
-.woocommerce-account .addresses .show>a.dropdown-toggle.edit,
-.woocommerce-account .addresses a.disabled.edit,
-.woocommerce-account .addresses a.edit:disabled,
-.woocommerce-account .addresses a.edit:not(:disabled):not(.disabled).active,
-.woocommerce-account .addresses a.edit:not(:disabled):not(.disabled):active,
-.woocommerce-account .ywsbs-change-status-buttons-wrapper .show>button.dropdown-toggle,
-.woocommerce-account .ywsbs-change-status-buttons-wrapper button.disabled,
-.woocommerce-account .ywsbs-change-status-buttons-wrapper button:disabled,
-.woocommerce-account .ywsbs-change-status-buttons-wrapper button:not(:disabled):not(.disabled).active,
-.woocommerce-account .ywsbs-change-status-buttons-wrapper button:not(:disabled):not(.disabled):active,
-.woocommerce-address-fields .button:disabled,
-.woocommerce-address-fields .button:not(:disabled):not(.disabled).active,
-.woocommerce-address-fields .button:not(:disabled):not(.disabled):active,
-.woocommerce-address-fields .disabled.button,
-.woocommerce-address-fields .show>.dropdown-toggle.button,
-.woocommerce-Address .show>a.dropdown-toggle.edit,
-.woocommerce-Address a.disabled.edit,
-.woocommerce-Address a.edit:disabled,
-.woocommerce-Address a.edit:not(:disabled):not(.disabled).active,
-.woocommerce-Address a.edit:not(:disabled):not(.disabled):active,
-.woocommerce-Addresses .show>a.dropdown-toggle.edit,
-.woocommerce-Addresses a.disabled.edit,
-.woocommerce-Addresses a.edit:disabled,
-.woocommerce-Addresses a.edit:not(:disabled):not(.disabled).active,
-.woocommerce-Addresses a.edit:not(:disabled):not(.disabled):active,
-.woocommerce-Button:disabled,
-.woocommerce-Button:not(:disabled):not(.disabled).active,
-.woocommerce-Button:not(:disabled):not(.disabled):active,
-.woocommerce-cart-form .coupon .button:disabled,
-.woocommerce-cart-form .coupon .button:not(:disabled):not(.disabled).active,
-.woocommerce-cart-form .coupon .button:not(:disabled):not(.disabled):active,
-.woocommerce-cart-form .coupon .disabled.button,
-.woocommerce-cart-form .coupon .show>.dropdown-toggle.button,
-.woocommerce-checkout .place-order .show>button.dropdown-toggle#place_order,
-.woocommerce-checkout .place-order button#place_order:disabled,
-.woocommerce-checkout .place-order button#place_order:not(:disabled):not(.disabled).active,
-.woocommerce-checkout .place-order button#place_order:not(:disabled):not(.disabled):active,
-.woocommerce-checkout .place-order button.disabled#place_order,
-.woocommerce-column--billing-address .show>a.dropdown-toggle.edit,
-.woocommerce-column--billing-address a.disabled.edit,
-.woocommerce-column--billing-address a.edit:disabled,
-.woocommerce-column--billing-address a.edit:not(:disabled):not(.disabled).active,
-.woocommerce-column--billing-address a.edit:not(:disabled):not(.disabled):active,
-.woocommerce-column--shipping-address .show>a.dropdown-toggle.edit,
-.woocommerce-column--shipping-address a.disabled.edit,
-.woocommerce-column--shipping-address a.edit:disabled,
-.woocommerce-column--shipping-address a.edit:not(:disabled):not(.disabled).active,
-.woocommerce-column--shipping-address a.edit:not(:disabled):not(.disabled):active,
-.woocommerce-columns--addresses .show>a.dropdown-toggle.edit,
-.woocommerce-columns--addresses a.disabled.edit,
-.woocommerce-columns--addresses a.edit:disabled,
-.woocommerce-columns--addresses a.edit:not(:disabled):not(.disabled).active,
-.woocommerce-columns--addresses a.edit:not(:disabled):not(.disabled):active,
-.woocommerce-form-login__submit:disabled,
-.woocommerce-form-login__submit:not(:disabled):not(.disabled).active,
-.woocommerce-form-login__submit:not(:disabled):not(.disabled):active,
-.woocommerce-form-register__submit:disabled,
-.woocommerce-form-register__submit:not(:disabled):not(.disabled).active,
-.woocommerce-form-register__submit:not(:disabled):not(.disabled):active,
-.woocommerce-MyAccount-content .disabled.yith-add-new-gc-my-account-button,
-.woocommerce-MyAccount-content .form-link-gift-card-to-user .show>button.dropdown-toggle,
-.woocommerce-MyAccount-content .form-link-gift-card-to-user button.disabled,
-.woocommerce-MyAccount-content .form-link-gift-card-to-user button:disabled,
-.woocommerce-MyAccount-content .form-link-gift-card-to-user button:not(:disabled):not(.disabled).active,
-.woocommerce-MyAccount-content .form-link-gift-card-to-user button:not(:disabled):not(.disabled):active,
-.woocommerce-MyAccount-content .show>.dropdown-toggle.yith-add-new-gc-my-account-button,
-.woocommerce-MyAccount-content .yith-add-new-gc-my-account-button:disabled,
-.woocommerce-MyAccount-content .yith-add-new-gc-my-account-button:not(:disabled):not(.disabled).active,
-.woocommerce-MyAccount-content .yith-add-new-gc-my-account-button:not(:disabled):not(.disabled):active,
-.ywdpd_popup #ywdpd_popup_container .ywdpd_step1 .ywdpd_btn_container .show>a.dropdown-toggle,
-.ywdpd_popup #ywdpd_popup_container .ywdpd_step1 .ywdpd_btn_container a.disabled,
-.ywdpd_popup #ywdpd_popup_container .ywdpd_step1 .ywdpd_btn_container a:disabled,
-.ywdpd_popup #ywdpd_popup_container .ywdpd_step1 .ywdpd_btn_container a:not(:disabled):not(.disabled).active,
-.ywdpd_popup #ywdpd_popup_container .ywdpd_step1 .ywdpd_btn_container a:not(:disabled):not(.disabled):active,
-body.assorted_product .abp_products_footer .button:disabled,
-body.assorted_product .abp_products_footer .button:not(:disabled):not(.disabled).active,
-body.assorted_product .abp_products_footer .button:not(:disabled):not(.disabled):active,
-body.assorted_product .abp_products_footer .disabled.button,
-body.assorted_product .abp_products_footer .show>.dropdown-toggle.button {
-    color: #fff;
-    background-color: #000;
-    border-color: #000
-}
 
-.btn--primary:not(:disabled):not(.disabled).active:focus,
-.btn--primary:not(:disabled):not(.disabled):active:focus,
-.btn-primary:not(:disabled):not(.disabled).active:focus,
-.btn-primary:not(:disabled):not(.disabled):active:focus,
-.cart-collaterals .checkout-button:not(:disabled):not(.disabled).active:focus,
-.cart-collaterals .checkout-button:not(:disabled):not(.disabled):active:focus,
-.cart-collaterals .show>.dropdown-toggle.checkout-button:focus,
-.minicart .checkout:not(:disabled):not(.disabled).active:focus,
-.minicart .checkout:not(:disabled):not(.disabled):active:focus,
-.minicart .show>.dropdown-toggle.checkout:focus,
-.minicart .woocommerce-mini-cart__buttons:not(.has-checkout-button) .button:not(:disabled):not(.disabled).active:focus,
-.minicart .woocommerce-mini-cart__buttons:not(.has-checkout-button) .button:not(:disabled):not(.disabled):active:focus,
-.minicart .woocommerce-mini-cart__buttons:not(.has-checkout-button) .show>.dropdown-toggle.button:focus,
-.newsletter-modal .mailchimp-form__field--subscribe .show>button.dropdown-toggle:focus,
-.newsletter-modal .mailchimp-form__field--subscribe button:not(:disabled):not(.disabled).active:focus,
-.newsletter-modal .mailchimp-form__field--subscribe button:not(:disabled):not(.disabled):active:focus,
-.show>.btn-primary.dropdown-toggle:focus,
-.show>.dropdown-toggle.btn--primary:focus,
-.show>.dropdown-toggle.single_add_to_cart_button:focus,
-.show>.dropdown-toggle.woocommerce-Button:focus,
-.show>.dropdown-toggle.woocommerce-form-login__submit:focus,
-.show>.dropdown-toggle.woocommerce-form-register__submit:focus,
-.single_add_to_cart_button:not(:disabled):not(.disabled).active:focus,
-.single_add_to_cart_button:not(:disabled):not(.disabled):active:focus,
-.woocommerce-account .addresses .show>a.dropdown-toggle.edit:focus,
-.woocommerce-account .addresses a.edit:not(:disabled):not(.disabled).active:focus,
-.woocommerce-account .addresses a.edit:not(:disabled):not(.disabled):active:focus,
-.woocommerce-account .ywsbs-change-status-buttons-wrapper .show>button.dropdown-toggle:focus,
-.woocommerce-account .ywsbs-change-status-buttons-wrapper button:not(:disabled):not(.disabled).active:focus,
-.woocommerce-account .ywsbs-change-status-buttons-wrapper button:not(:disabled):not(.disabled):active:focus,
-.woocommerce-address-fields .button:not(:disabled):not(.disabled).active:focus,
-.woocommerce-address-fields .button:not(:disabled):not(.disabled):active:focus,
-.woocommerce-address-fields .show>.dropdown-toggle.button:focus,
-.woocommerce-Address .show>a.dropdown-toggle.edit:focus,
-.woocommerce-Address a.edit:not(:disabled):not(.disabled).active:focus,
-.woocommerce-Address a.edit:not(:disabled):not(.disabled):active:focus,
-.woocommerce-Addresses .show>a.dropdown-toggle.edit:focus,
-.woocommerce-Addresses a.edit:not(:disabled):not(.disabled).active:focus,
-.woocommerce-Addresses a.edit:not(:disabled):not(.disabled):active:focus,
-.woocommerce-Button:not(:disabled):not(.disabled).active:focus,
-.woocommerce-Button:not(:disabled):not(.disabled):active:focus,
-.woocommerce-cart-form .coupon .button:not(:disabled):not(.disabled).active:focus,
-.woocommerce-cart-form .coupon .button:not(:disabled):not(.disabled):active:focus,
-.woocommerce-cart-form .coupon .show>.dropdown-toggle.button:focus,
-.woocommerce-checkout .place-order .show>button.dropdown-toggle#place_order:focus,
-.woocommerce-checkout .place-order button#place_order:not(:disabled):not(.disabled).active:focus,
-.woocommerce-checkout .place-order button#place_order:not(:disabled):not(.disabled):active:focus,
-.woocommerce-column--billing-address .show>a.dropdown-toggle.edit:focus,
-.woocommerce-column--billing-address a.edit:not(:disabled):not(.disabled).active:focus,
-.woocommerce-column--billing-address a.edit:not(:disabled):not(.disabled):active:focus,
-.woocommerce-column--shipping-address .show>a.dropdown-toggle.edit:focus,
-.woocommerce-column--shipping-address a.edit:not(:disabled):not(.disabled).active:focus,
-.woocommerce-column--shipping-address a.edit:not(:disabled):not(.disabled):active:focus,
-.woocommerce-columns--addresses .show>a.dropdown-toggle.edit:focus,
-.woocommerce-columns--addresses a.edit:not(:disabled):not(.disabled).active:focus,
-.woocommerce-columns--addresses a.edit:not(:disabled):not(.disabled):active:focus,
-.woocommerce-form-login__submit:not(:disabled):not(.disabled).active:focus,
-.woocommerce-form-login__submit:not(:disabled):not(.disabled):active:focus,
-.woocommerce-form-register__submit:not(:disabled):not(.disabled).active:focus,
-.woocommerce-form-register__submit:not(:disabled):not(.disabled):active:focus,
-.woocommerce-MyAccount-content .form-link-gift-card-to-user .show>button.dropdown-toggle:focus,
-.woocommerce-MyAccount-content .form-link-gift-card-to-user button:not(:disabled):not(.disabled).active:focus,
-.woocommerce-MyAccount-content .form-link-gift-card-to-user button:not(:disabled):not(.disabled):active:focus,
-.woocommerce-MyAccount-content .show>.dropdown-toggle.yith-add-new-gc-my-account-button:focus,
-.woocommerce-MyAccount-content .yith-add-new-gc-my-account-button:not(:disabled):not(.disabled).active:focus,
-.woocommerce-MyAccount-content .yith-add-new-gc-my-account-button:not(:disabled):not(.disabled):active:focus,
-.ywdpd_popup #ywdpd_popup_container .ywdpd_step1 .ywdpd_btn_container .show>a.dropdown-toggle:focus,
-.ywdpd_popup #ywdpd_popup_container .ywdpd_step1 .ywdpd_btn_container a:not(:disabled):not(.disabled).active:focus,
-.ywdpd_popup #ywdpd_popup_container .ywdpd_step1 .ywdpd_btn_container a:not(:disabled):not(.disabled):active:focus,
-body.assorted_product .abp_products_footer .button:not(:disabled):not(.disabled).active:focus,
-body.assorted_product .abp_products_footer .button:not(:disabled):not(.disabled):active:focus,
-body.assorted_product .abp_products_footer .show>.dropdown-toggle.button:focus {
-    -webkit-box-shadow: 0 0 0 .2rem rgba(38, 38, 38, .5);
-    box-shadow: 0 0 0 .2rem rgba(38, 38, 38, .5)
-}
+
 
 .btn-secondary {
     color: #fff;
@@ -14297,12 +13640,8 @@ label.checkbox>input+span:before {
     border-color: transparent
 }
 
-.nav-tabs .nav-item.show .nav-link,
-.nav-tabs .nav-link.active {
-    color: #495057;
-    background-color: #fff;
-    border-color: #dee2e6 #dee2e6 #fff
-}
+
+
 
 .nav-tabs .dropdown-menu {
     margin-top: -1px;
@@ -14340,9 +13679,7 @@ label.checkbox>input+span:before {
     display: none
 }
 
-.tab-content>.active {
-    display: block
-}
+
 
 .alert,
 .gift-cards_form .ywgc-manual-amount-error,
@@ -19781,9 +19118,7 @@ a.text-dark:hover {
     color: #121416 !important
 }
 
-.text-body {
-    color: #000 !important
-}
+
 
 .text-muted {
     color: #6c757d !important
@@ -19872,13 +19207,7 @@ a.text-dark:hover {
     @page {
         size: a3
     }
-    .container,
-    body {
-        min-width: 992px !important
-    }
-    .navbar {
-        display: none
-    }
+
     .badge {
         border: 1px solid #000
     }
@@ -20557,10 +19886,7 @@ a.text-dark:hover {
     z-index: 2
 }
 
-.mm-wrapper_blocking,
-.mm-wrapper_blocking body {
-    overflow: hidden
-}
+
 
 .mm-wrapper_blocking .mm-wrapper__blocker {
     display: block
@@ -21675,10 +21001,7 @@ a.text-dark:hover {
     --mm-sidebar-expanded-size: 440px
 }
 
-.mm-wrapper_sidebar-collapsed body,
-.mm-wrapper_sidebar-expanded body {
-    position: relative
-}
+
 
 .mm-wrapper_sidebar-collapsed .mm-slideout,
 .mm-wrapper_sidebar-expanded .mm-slideout {
@@ -21736,10 +21059,7 @@ a.text-dark:hover {
     display: none
 }
 
-.mm-wrapper_sidebar-expanded.mm-wrapper_blocking,
-.mm-wrapper_sidebar-expanded.mm-wrapper_blocking body {
-    overflow: visible
-}
+
 
 .mm-wrapper_sidebar-expanded .mm-wrapper__blocker {
     display: none !important
@@ -22473,31 +21793,8 @@ body.modal-open .mm-slideout {
     font-weight: 400 !important
 }
 
-body {
-    font-size: 100%;
-    -webkit-text-size-adjust: 100%;
-    font-variant-ligatures: none;
-    -webkit-font-variant-ligatures: none;
-    text-rendering: optimizeLegibility;
-    -moz-osx-font-smoothing: grayscale;
-    -webkit-font-smoothing: antialiased;
-    text-shadow: rgba(0, 0, 0, .01) 0 0 1px;
-    font-size: 14px;
-    overflow-x: hidden;
-    overflow-y: scroll
-}
 
-@media (min-width:1200px) {
-    body {
-        font-size: 16px
-    }
-}
 
-@media (min-width:1600px) {
-    body {
-        font-size: 18px
-    }
-}
 
 .alert,
 .gift-cards_form .ywgc-manual-amount-error,
@@ -22543,66 +21840,8 @@ body {
     margin-right: -30px
 }
 
-#additional_xmas_wish_field .main-menu-mobile__footer .widget label,
-#additional_xmas_wish_field .u-wysiwyg-content label,
-#additional_xmas_wish_field .woocommerce-checkout label,
-#additional_xmas_wish_field .woocommerce-MyAccount-content label,
-#customer_login .col-1 h2,
-#customer_login .col-2 h2,
-#order_comments_field .main-menu-mobile__footer .widget label,
-#order_comments_field .u-wysiwyg-content label,
-#order_comments_field .woocommerce-checkout label,
-#order_comments_field .woocommerce-MyAccount-content label,
-.accordion__item__title,
-.archive-shop__breadcrumbs .widget_layered_nav_filters li,
-.cart-collaterals .cross-sells h2,
-.cart-collaterals .shop_table th,
-.display,
-.main-menu-mobile__footer .widget #additional_xmas_wish_field label,
-.main-menu-mobile__footer .widget #order_comments_field label,
-.main-menu-mobile__footer .widget h3,
-.minicart .woocommerce-mini-cart__total,
-.mm-listitem__text,
-.product-main .price,
-.product-main .product_title,
-.products-menu__nav__menu a,
-.u-wysiwyg-content #additional_xmas_wish_field label,
-.u-wysiwyg-content #order_comments_field label,
-.u-wysiwyg-content h1,
-.u-wysiwyg-content h2,
-.u-wysiwyg-content h3,
-.u-wysiwyg-content h4,
-.ui-dialog .ui-dialog-titlebar,
-.woocommerce-account .my_account_giftcards .ywsbs-subscription,
-.woocommerce-account .product-name,
-.woocommerce-account .subscription-review-table th,
-.woocommerce-account .ywsbs_subscription_table .ywsbs-subscription,
-.woocommerce-cart-form .coupon label,
-.woocommerce-cart-form td.product-name,
-.woocommerce-checkout #additional_xmas_wish_field label,
-.woocommerce-checkout #customer_details .col-1 #different_shipping_address_field span,
-.woocommerce-checkout #customer_details .col-1 .woocommerce-account-fields span,
-.woocommerce-checkout #order_comments_field label,
-.woocommerce-checkout #order_review_heading,
-.woocommerce-checkout-review-order-table th,
-.woocommerce-checkout h3,
-.woocommerce-column--billing-address h2,
-.woocommerce-column--shipping-address h2,
-.woocommerce-form-login .wc-social-login .ywsl-label,
-.woocommerce-MyAccount-content #additional_xmas_wish_field label,
-.woocommerce-MyAccount-content #order_comments_field label,
-.woocommerce-MyAccount-content .medium-title,
-.woocommerce-MyAccount-content h2,
-.woocommerce-MyAccount-content h3,
-.woocommerce-order-details__title,
-.woocommerce-table--order-details th,
-.woocommerce-view-order .woocommerce-table__product-name,
-.woocommerce-view-order .woocommerce-table th,
-.ywdpd_popup .ywdpd_rule_title,
-.ywdpd_popup .ywdpd_single_product h5,
-body.assorted_product .abp_bundle_itmes_content [class^=abp-product-],
-body.assorted_product .abp_review_order h2,
-body.assorted_product .apb_products_items_container .apb-title {
+
+.display {
     font-family: Canela, PF Regal Display Pro, Times New Roman, serif;
     font-weight: 700
 }
@@ -22671,22 +21910,19 @@ body.assorted_product .apb_products_items_container .apb-title:lang(el) {
     font-weight: 900
 }
 
-.display--1,
-.u-wysiwyg-content h1 {
+.display--1 {
     font-size: 36px;
     line-height: 1.1
 }
 
 @media (min-width:768px) {
-    .display--1,
-    .u-wysiwyg-content h1 {
+    .display--1{
         font-size: 70px
     }
 }
 
 @media (min-width:1200px) {
-    .display--1,
-    .u-wysiwyg-content h1 {
+    .display--1{
         font-size: 85px
     }
 }
@@ -27705,19 +26941,7 @@ body.error404 {
     transition: transform .25s cubic-bezier(0, .5, .5, 1), -webkit-transform .25s cubic-bezier(0, .5, .5, 1), -o-transform .25s cubic-bezier(0, .5, .5, 1)
 }
 
-.archive-shop__breadcrumbs .template-information .information-sidebar ul li.active span svg,
-.archive-shop__breadcrumbs .template-information .information-sidebar ul li a:hover span svg,
-.template-information .information-sidebar .archive-shop__breadcrumbs ul li.active span svg,
-.template-information .information-sidebar .archive-shop__breadcrumbs ul li a:hover span svg,
-.template-information .information-sidebar .nav li.active span svg,
-.template-information .information-sidebar .nav li a:hover span svg {
-    -webkit-transform: scaleX(1);
-    -o-transform: scaleX(1);
-    transform: scaleX(1);
-    -webkit-transform-origin: 0 100%;
-    -o-transform-origin: 0 100%;
-    transform-origin: 0 100%
-}
+
 
 body#tinymce {
     margin: 12px !important
@@ -27969,27 +27193,10 @@ body.woocommerce-cart {
     display: none
 }
 
-.woocommerce-cart-form tbody tr {
-    position: relative
-}
 
-@media (max-width:767px) {
-    .woocommerce-cart-form tbody tr {
-        padding: 15px 0 13px;
-        -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-        justify-content: space-between
-    }
-}
 
-.woocommerce-cart-form tbody tr:first-child {
-    border-top: 2px solid #000
-}
 
-.woocommerce-cart-form tbody tr:last-child {
-    border-top: 1px solid #000;
-    border-bottom: 0
-}
+
 
 @media (min-width:768px) {
     .woocommerce-cart-form .product-price,
@@ -29829,9 +29036,6 @@ form.lost_reset_password p:not(.woocommerce-form-row) {
     font-weight: 400
 }
 
-.woocommerce-account .subscription-review-table tbody tr {
-    border-bottom: 1px solid #000
-}
 
 .woocommerce-account .my_account_giftcards,
 .woocommerce-account .ywsbs_subscription_table {
@@ -29904,9 +29108,7 @@ form.lost_reset_password p:not(.woocommerce-form-row) {
     margin-top: 40px
 }
 
-.woocommerce-account .ywsbs-subscription-info-wrapper .status.active {
-    color: #000
-}
+
 
 .woocommerce-account .status-processing {
     color: #000 !important
@@ -30317,16 +29519,9 @@ body.assorted_product .box-theme__container {
     margin-top: 30px
 }
 
-body.assorted_product .box-theme__container .media-item {
-    margin-top: 25px;
-    margin-bottom: 20px
-}
 
-@media (min-width:1200px) {
-    body.assorted_product .box-theme__container .media-item {
-        margin-bottom: 60px
-    }
-}
+
+
 
 body.assorted_product .abp_loader div {
     border: 4px solid transparent;
@@ -31479,13 +30674,7 @@ body.assorted_product div#abp-max-error {
     display: none
 }
 
-.woocommerce-checkout-review-order-table tbody,
-.woocommerce-table--order-details tbody {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    margin-bottom: -20px
-}
+
 
 .woocommerce-checkout-review-order-table tbody:after,
 .woocommerce-checkout-review-order-table tbody:before,
@@ -32083,35 +31272,6 @@ ul.woocommerce-order-overview li strong {
     }
 }
 
-.remove-site-header-gutter .background-switcher-wrap:first-child,
-body.assorted_product .background-switcher-wrap:first-child {
-    margin-top: -137px;
-    padding-top: 137px
-}
-
-@media (min-width:768px) {
-    .remove-site-header-gutter .background-switcher-wrap:first-child,
-    body.assorted_product .background-switcher-wrap:first-child {
-        margin-top: -62px;
-        padding-top: 62px
-    }
-}
-
-@media (min-width:1200px) {
-    .remove-site-header-gutter .background-switcher-wrap:first-child,
-    body.assorted_product .background-switcher-wrap:first-child {
-        margin-top: -87px;
-        padding-top: 87px
-    }
-}
-
-@media (min-width:1600px) {
-    .remove-site-header-gutter .background-switcher-wrap:first-child,
-    body.assorted_product .background-switcher-wrap:first-child {
-        margin-top: -91px;
-        padding-top: 91px
-    }
-}
 
 .badge {
     position: relative;
@@ -32524,54 +31684,9 @@ body.assorted_product .abp_products_footer .button {
     white-space: nowrap
 }
 
-.btn:focus,
-.cart-collaterals .checkout-button:focus,
-.minicart .checkout:focus,
-.minicart .woocommerce-mini-cart__buttons:not(.has-checkout-button) .button:focus,
-.newsletter-modal .mailchimp-form__field--subscribe button:focus,
-.single_add_to_cart_button:focus,
-.woocommerce-account .addresses a.edit:focus,
-.woocommerce-account .ywsbs-change-status-buttons-wrapper button:focus,
-.woocommerce-address-fields .button:focus,
-.woocommerce-Addresses a.edit:focus,
-.woocommerce-Button:focus,
-.woocommerce-cart-form .coupon .button:focus,
-.woocommerce-checkout .place-order button#place_order:focus,
-.woocommerce-columns--addresses a.edit:focus,
-.woocommerce-form-login__submit:focus,
-.woocommerce-form-register__submit:focus,
-.woocommerce-MyAccount-content .form-link-gift-card-to-user button:focus,
-.woocommerce-MyAccount-content .yith-add-new-gc-my-account-button:focus,
-.ywdpd_popup #ywdpd_popup_container .ywdpd_step1 .ywdpd_btn_container a:focus,
-body.assorted_product .abp_products_footer .button:focus {
-    outline: none;
-    -webkit-box-shadow: none;
-    box-shadow: none
-}
 
-.btn--primary,
-.cart-collaterals .checkout-button,
-.minicart .checkout,
-.minicart .woocommerce-mini-cart__buttons:not(.has-checkout-button) .button,
-.newsletter-modal .mailchimp-form__field--subscribe button,
-.single_add_to_cart_button,
-.woocommerce-account .addresses .woocommerce-column--billing-address a.edit,
-.woocommerce-account .addresses .woocommerce-column--shipping-address a.edit,
-.woocommerce-account .ywsbs-change-status-buttons-wrapper button,
-.woocommerce-address-fields .button,
-.woocommerce-Address a.edit,
-.woocommerce-Button,
-.woocommerce-cart-form .coupon .button,
-.woocommerce-checkout .place-order button#place_order,
-.woocommerce-column--billing-address a.edit,
-.woocommerce-column--shipping-address a.edit,
-.woocommerce-form-login__submit,
-.woocommerce-form-register__submit,
-.woocommerce-MyAccount-content .form-link-gift-card-to-user button,
-.woocommerce-MyAccount-content .yith-add-new-gc-my-account-button,
-.ywdpd_popup #ywdpd_popup_container .ywdpd_step1 .ywdpd_btn_container a,
-.ywdpd_popup .single_add_to_cart_button,
-body.assorted_product .abp_products_footer .button {
+
+.btn--primary {
     position: relative;
     font-family: Nitti, Courier New, monospace;
     font-size: 14px;
@@ -32583,54 +31698,13 @@ body.assorted_product .abp_products_footer .button {
     padding-bottom: .9em
 }
 
-.btn--primary:hover span,
-.cart-collaterals .checkout-button:hover span,
-.minicart .checkout:hover span,
-.minicart .woocommerce-mini-cart__buttons:not(.has-checkout-button) .button:hover span,
-.newsletter-modal .mailchimp-form__field--subscribe button:hover span,
-.single_add_to_cart_button:hover span,
-.woocommerce-account .ywsbs-change-status-buttons-wrapper button:hover span,
-.woocommerce-address-fields .button:hover span,
-.woocommerce-Address a.edit:hover span,
-.woocommerce-Button:hover span,
-.woocommerce-cart-form .coupon .button:hover span,
-.woocommerce-checkout .place-order button#place_order:hover span,
-.woocommerce-column--billing-address a.edit:hover span,
-.woocommerce-column--shipping-address a.edit:hover span,
-.woocommerce-form-login__submit:hover span,
-.woocommerce-form-register__submit:hover span,
-.woocommerce-MyAccount-content .form-link-gift-card-to-user button:hover span,
-.woocommerce-MyAccount-content .yith-add-new-gc-my-account-button:hover span,
-.ywdpd_popup #ywdpd_popup_container .ywdpd_step1 .ywdpd_btn_container a:hover span,
-body.assorted_product .abp_products_footer .button:hover span {
+.btn--primary:hover span {
     -webkit-animation: marquee 2.3s linear infinite;
     -o-animation: marquee 2.3s linear infinite;
     animation: marquee 2.3s linear infinite
 }
 
-.btn--primary span,
-.cart-collaterals .checkout-button span,
-.minicart .checkout span,
-.minicart .woocommerce-mini-cart__buttons:not(.has-checkout-button) .button span,
-.newsletter-modal .mailchimp-form__field--subscribe button span,
-.single_add_to_cart_button span,
-.woocommerce-account .addresses .woocommerce-column--billing-address a.edit span,
-.woocommerce-account .addresses .woocommerce-column--shipping-address a.edit span,
-.woocommerce-account .ywsbs-change-status-buttons-wrapper button span,
-.woocommerce-address-fields .button span,
-.woocommerce-Address a.edit span,
-.woocommerce-Button span,
-.woocommerce-cart-form .coupon .button span,
-.woocommerce-checkout .place-order button#place_order span,
-.woocommerce-column--billing-address a.edit span,
-.woocommerce-column--shipping-address a.edit span,
-.woocommerce-form-login__submit span,
-.woocommerce-form-register__submit span,
-.woocommerce-MyAccount-content .form-link-gift-card-to-user button span,
-.woocommerce-MyAccount-content .yith-add-new-gc-my-account-button span,
-.ywdpd_popup #ywdpd_popup_container .ywdpd_step1 .ywdpd_btn_container a span,
-.ywdpd_popup .single_add_to_cart_button span,
-body.assorted_product .abp_products_footer .button span {
+.btn--primary span{
     width: 100%;
     display: block;
     position: relative;
@@ -32643,29 +31717,7 @@ body.assorted_product .abp_products_footer .button span {
     transform: translateX(0)
 }
 
-.btn--primary span:before,
-.cart-collaterals .checkout-button span:before,
-.minicart .checkout span:before,
-.minicart .woocommerce-mini-cart__buttons:not(.has-checkout-button) .button span:before,
-.newsletter-modal .mailchimp-form__field--subscribe button span:before,
-.single_add_to_cart_button span:before,
-.woocommerce-account .addresses .woocommerce-column--billing-address a.edit span:before,
-.woocommerce-account .addresses .woocommerce-column--shipping-address a.edit span:before,
-.woocommerce-account .ywsbs-change-status-buttons-wrapper button span:before,
-.woocommerce-address-fields .button span:before,
-.woocommerce-Address a.edit span:before,
-.woocommerce-Button span:before,
-.woocommerce-cart-form .coupon .button span:before,
-.woocommerce-checkout .place-order button#place_order span:before,
-.woocommerce-column--billing-address a.edit span:before,
-.woocommerce-column--shipping-address a.edit span:before,
-.woocommerce-form-login__submit span:before,
-.woocommerce-form-register__submit span:before,
-.woocommerce-MyAccount-content .form-link-gift-card-to-user button span:before,
-.woocommerce-MyAccount-content .yith-add-new-gc-my-account-button span:before,
-.ywdpd_popup #ywdpd_popup_container .ywdpd_step1 .ywdpd_btn_container a span:before,
-.ywdpd_popup .single_add_to_cart_button span:before,
-body.assorted_product .abp_products_footer .button span:before {
+.btn--primary span:before {
     content: attr(data-content);
     position: absolute;
     left: 0;
@@ -32691,57 +31743,13 @@ body.assorted_product .abp_products_footer .button span:before {
 }
 
 @media (min-width:768px) {
-    .btn--primary,
-    .cart-collaterals .checkout-button,
-    .minicart .checkout,
-    .minicart .woocommerce-mini-cart__buttons:not(.has-checkout-button) .button,
-    .newsletter-modal .mailchimp-form__field--subscribe button,
-    .single_add_to_cart_button,
-    .woocommerce-account .addresses .woocommerce-column--billing-address a.edit,
-    .woocommerce-account .addresses .woocommerce-column--shipping-address a.edit,
-    .woocommerce-account .ywsbs-change-status-buttons-wrapper button,
-    .woocommerce-address-fields .button,
-    .woocommerce-Address a.edit,
-    .woocommerce-Button,
-    .woocommerce-cart-form .coupon .button,
-    .woocommerce-checkout .place-order button#place_order,
-    .woocommerce-column--billing-address a.edit,
-    .woocommerce-column--shipping-address a.edit,
-    .woocommerce-form-login__submit,
-    .woocommerce-form-register__submit,
-    .woocommerce-MyAccount-content .form-link-gift-card-to-user button,
-    .woocommerce-MyAccount-content .yith-add-new-gc-my-account-button,
-    .ywdpd_popup #ywdpd_popup_container .ywdpd_step1 .ywdpd_btn_container a,
-    .ywdpd_popup .single_add_to_cart_button,
-    body.assorted_product .abp_products_footer .button {
+    .btn--primary {
         font-size: 16px
     }
 }
 
 @media (min-width:1200px) {
-    .btn--primary,
-    .cart-collaterals .checkout-button,
-    .minicart .checkout,
-    .minicart .woocommerce-mini-cart__buttons:not(.has-checkout-button) .button,
-    .newsletter-modal .mailchimp-form__field--subscribe button,
-    .single_add_to_cart_button,
-    .woocommerce-account .addresses .woocommerce-column--billing-address a.edit,
-    .woocommerce-account .addresses .woocommerce-column--shipping-address a.edit,
-    .woocommerce-account .ywsbs-change-status-buttons-wrapper button,
-    .woocommerce-address-fields .button,
-    .woocommerce-Address a.edit,
-    .woocommerce-Button,
-    .woocommerce-cart-form .coupon .button,
-    .woocommerce-checkout .place-order button#place_order,
-    .woocommerce-column--billing-address a.edit,
-    .woocommerce-column--shipping-address a.edit,
-    .woocommerce-form-login__submit,
-    .woocommerce-form-register__submit,
-    .woocommerce-MyAccount-content .form-link-gift-card-to-user button,
-    .woocommerce-MyAccount-content .yith-add-new-gc-my-account-button,
-    .ywdpd_popup #ywdpd_popup_container .ywdpd_step1 .ywdpd_btn_container a,
-    .ywdpd_popup .single_add_to_cart_button,
-    body.assorted_product .abp_products_footer .button {
+    .btn--primary {
         font-size: 20px
     }
 }
@@ -32834,18 +31842,15 @@ body.assorted_product .abp_products_footer .button span:before {
     }
 }
 
-.btn--sm,
-.minicart .checkout,
-.minicart .woocommerce-mini-cart__buttons:not(.has-checkout-button) .button {
+.btn--sm
+ {
     font-size: 16px;
     padding-top: .7em;
     padding-bottom: .8em
 }
 
 @media (min-width:768px) {
-    .btn--sm,
-    .minicart .checkout,
-    .minicart .woocommerce-mini-cart__buttons:not(.has-checkout-button) .button {
+    .btn--sm {
         padding-top: 1.25em;
         padding-bottom: 1.25em
     }
@@ -33395,18 +32400,10 @@ body.is-touch .custom-cursor {
     transform: translate(-50%, 8%) rotate(-90deg)
 }
 
-.hero-section .media-item {
-    height: 100%
-}
 
-.hero-section .media-item__inner {
-    min-height: 100%
-}
 
-.hero-section .media-item__image {
-    -o-object-fit: cover;
-    object-fit: cover
-}
+
+
 
 .hero-section.block--first {
     margin-top: -64px
@@ -33435,30 +32432,7 @@ body.is-touch .custom-cursor {
     max-width: none !important
 }
 
-@media (min-width:992px) {
-    .hero-section--global-link .media-item__inner {
-        padding-bottom: 85% !important
-    }
-}
 
-@media (min-width:1200px) {
-    .hero-section--global-link .media-item__inner {
-        padding-bottom: 55% !important
-    }
-}
-
-@media (min-width:1600px) {
-    .hero-section--global-link .media-item__inner {
-        padding-bottom: 50% !important
-    }
-}
-
-@media (min-width:992px) {
-    .hero-section--global-link .media-item__inner .media-item__image {
-        -o-object-fit: cover;
-        object-fit: cover
-    }
-}
 
 .hp-cookie-notice {
     opacity: 0;
@@ -36436,32 +35410,8 @@ body.woocommerce-cart .page-header h1 {
     }
 }
 
-.product-card__alternative-badge.media-item {
-    position: absolute;
-    right: 0;
-    top: 11.7%;
-    z-index: 9001 !important;
-    width: 70px;
-    height: 70px;
-    background-repeat: no-repeat
-}
 
-@media (min-width:768px) {
-    .product-card__alternative-badge.media-item {
-        right: 17px;
-        right: 40px
-    }
-}
 
-@media (min-width:1600px) {
-    .product-card__alternative-badge.media-item {
-        right: 100px
-    }
-}
-
-.product-card__alternative-badge.media-item .media-item__inner {
-    padding-bottom: 100% !important
-}
 
 .product-card__link {
     display: block;
@@ -36610,9 +35560,6 @@ body.assorted_product .apb_products_items_container .apb-title {
     background-position: 50% 50%
 }
 
-.product-card .media-item {
-    z-index: 2
-}
 
 .product-card--order-review {
     margin-bottom: 0
@@ -36736,14 +35683,7 @@ body.assorted_product .apb_products_items_container .product-card--order-review 
     height: 100%
 }
 
-.product-list-cover .media-item__inner {
-    min-height: 100%
-}
 
-.product-list-cover .media-item__inner img {
-    -o-object-fit: cover;
-    object-fit: cover
-}
 
 .product-list-header {
     padding-top: 30px;
@@ -37109,10 +36049,7 @@ body.assorted_product .apb_products_items_container .product-card--order-review 
     color: rgba(0, 0, 0, .5)
 }
 
-.product-select__options a.active {
-    pointer-events: none;
-    color: rgba(0, 0, 0, .5)
-}
+
 
 .products-menu {
     display: none
@@ -37665,10 +36602,7 @@ body.assorted_product .apb_products_items_container .product-card--order-review 
     color: rgba(0, 0, 0, .5)
 }
 
-.recipe-select__options a.active {
-    pointer-events: none;
-    color: rgba(0, 0, 0, .5)
-}
+
 
 .recipes-slider {
     padding-top: 70px;
@@ -38132,23 +37066,6 @@ body.assorted_product .apb_products_items_container .recipes-slider .marquee-sli
     position: relative
 }
 
-.shop-banner__background .media-item__inner {
-    padding-bottom: 140% !important;
-    border-radius: 0 93px
-}
-
-@media (min-width:768px) {
-    .shop-banner__background .media-item__inner {
-        padding-bottom: 46% !important;
-        min-height: 420px
-    }
-}
-
-@media (min-width:992px) {
-    .shop-banner__background .media-item__inner {
-        border-radius: 0 176px
-    }
-}
 
 .shop-banner__background img {
     -o-object-fit: cover;
@@ -38482,11 +37399,6 @@ body.assorted_product .site-header {
     }
 }
 
-.site-header .menu-item.active a:before {
-    -webkit-transform: scaleX(1);
-    -o-transform: scaleX(1);
-    transform: scaleX(1)
-}
 
 .site-header__link {
     white-space: nowrap
@@ -38548,75 +37460,7 @@ body.assorted_product .site-header {
     }
 }
 
-@media (max-width:767px) {
-    .product-main .social-login .u-escape-container--reversed .summary,
-    .product-main .social-login .woocommerce-form-login .wc-social-login .ywsl-label .summary,
-    .product-main .social-login .woocommerce-form-login .wc-social-login .ywsl-social .summary,
-    .product-main .woocommerce-form-login .wc-social-login .social-login .ywsl-label .summary,
-    .product-main .woocommerce-form-login .wc-social-login .social-login .ywsl-social .summary,
-    .social-login .u-escape-container--reversed .product-main .summary,
-    .social-login .u-escape-container--reversed .row,
-    .social-login .u-escape-container--reversed .woocommerce-account .woocommerce-EditAccountForm,
-    .social-login .u-escape-container--reversed .woocommerce-checkout .woocommerce-additional-fields__field-wrapper,
-    .social-login .u-escape-container--reversed .woocommerce-checkout .woocommerce-address-fields__field-wrapper,
-    .social-login .u-escape-container--reversed .woocommerce-checkout .woocommerce-billing-fields__field-wrapper,
-    .social-login .u-escape-container--reversed .woocommerce-checkout .woocommerce-shipping-fields__field-wrapper,
-    .social-login .woocommerce-form-login .wc-social-login .ywsl-label .product-main .summary,
-    .social-login .woocommerce-form-login .wc-social-login .ywsl-label .row,
-    .social-login .woocommerce-form-login .wc-social-login .ywsl-label .woocommerce-account .woocommerce-EditAccountForm,
-    .social-login .woocommerce-form-login .wc-social-login .ywsl-label .woocommerce-checkout .woocommerce-additional-fields__field-wrapper,
-    .social-login .woocommerce-form-login .wc-social-login .ywsl-label .woocommerce-checkout .woocommerce-address-fields__field-wrapper,
-    .social-login .woocommerce-form-login .wc-social-login .ywsl-label .woocommerce-checkout .woocommerce-billing-fields__field-wrapper,
-    .social-login .woocommerce-form-login .wc-social-login .ywsl-label .woocommerce-checkout .woocommerce-shipping-fields__field-wrapper,
-    .social-login .woocommerce-form-login .wc-social-login .ywsl-social .product-main .summary,
-    .social-login .woocommerce-form-login .wc-social-login .ywsl-social .row,
-    .social-login .woocommerce-form-login .wc-social-login .ywsl-social .woocommerce-account .woocommerce-EditAccountForm,
-    .social-login .woocommerce-form-login .wc-social-login .ywsl-social .woocommerce-checkout .woocommerce-additional-fields__field-wrapper,
-    .social-login .woocommerce-form-login .wc-social-login .ywsl-social .woocommerce-checkout .woocommerce-address-fields__field-wrapper,
-    .social-login .woocommerce-form-login .wc-social-login .ywsl-social .woocommerce-checkout .woocommerce-billing-fields__field-wrapper,
-    .social-login .woocommerce-form-login .wc-social-login .ywsl-social .woocommerce-checkout .woocommerce-shipping-fields__field-wrapper,
-    .woocommerce-account .social-login .u-escape-container--reversed .woocommerce-EditAccountForm,
-    .woocommerce-account .social-login .woocommerce-form-login .wc-social-login .ywsl-label .woocommerce-EditAccountForm,
-    .woocommerce-account .social-login .woocommerce-form-login .wc-social-login .ywsl-social .woocommerce-EditAccountForm,
-    .woocommerce-account .woocommerce-form-login .wc-social-login .social-login .ywsl-label .woocommerce-EditAccountForm,
-    .woocommerce-account .woocommerce-form-login .wc-social-login .social-login .ywsl-social .woocommerce-EditAccountForm,
-    .woocommerce-checkout .social-login .u-escape-container--reversed .woocommerce-additional-fields__field-wrapper,
-    .woocommerce-checkout .social-login .u-escape-container--reversed .woocommerce-address-fields__field-wrapper,
-    .woocommerce-checkout .social-login .u-escape-container--reversed .woocommerce-billing-fields__field-wrapper,
-    .woocommerce-checkout .social-login .u-escape-container--reversed .woocommerce-shipping-fields__field-wrapper,
-    .woocommerce-checkout .social-login .woocommerce-form-login .wc-social-login .ywsl-label .woocommerce-additional-fields__field-wrapper,
-    .woocommerce-checkout .social-login .woocommerce-form-login .wc-social-login .ywsl-label .woocommerce-address-fields__field-wrapper,
-    .woocommerce-checkout .social-login .woocommerce-form-login .wc-social-login .ywsl-label .woocommerce-billing-fields__field-wrapper,
-    .woocommerce-checkout .social-login .woocommerce-form-login .wc-social-login .ywsl-label .woocommerce-shipping-fields__field-wrapper,
-    .woocommerce-checkout .social-login .woocommerce-form-login .wc-social-login .ywsl-social .woocommerce-additional-fields__field-wrapper,
-    .woocommerce-checkout .social-login .woocommerce-form-login .wc-social-login .ywsl-social .woocommerce-address-fields__field-wrapper,
-    .woocommerce-checkout .social-login .woocommerce-form-login .wc-social-login .ywsl-social .woocommerce-billing-fields__field-wrapper,
-    .woocommerce-checkout .social-login .woocommerce-form-login .wc-social-login .ywsl-social .woocommerce-shipping-fields__field-wrapper,
-    .woocommerce-checkout .woocommerce-form-login .wc-social-login .social-login .ywsl-label .woocommerce-additional-fields__field-wrapper,
-    .woocommerce-checkout .woocommerce-form-login .wc-social-login .social-login .ywsl-label .woocommerce-address-fields__field-wrapper,
-    .woocommerce-checkout .woocommerce-form-login .wc-social-login .social-login .ywsl-label .woocommerce-billing-fields__field-wrapper,
-    .woocommerce-checkout .woocommerce-form-login .wc-social-login .social-login .ywsl-label .woocommerce-shipping-fields__field-wrapper,
-    .woocommerce-checkout .woocommerce-form-login .wc-social-login .social-login .ywsl-social .woocommerce-additional-fields__field-wrapper,
-    .woocommerce-checkout .woocommerce-form-login .wc-social-login .social-login .ywsl-social .woocommerce-address-fields__field-wrapper,
-    .woocommerce-checkout .woocommerce-form-login .wc-social-login .social-login .ywsl-social .woocommerce-billing-fields__field-wrapper,
-    .woocommerce-checkout .woocommerce-form-login .wc-social-login .social-login .ywsl-social .woocommerce-shipping-fields__field-wrapper,
-    .woocommerce-form-login .wc-social-login .social-login .ywsl-label .product-main .summary,
-    .woocommerce-form-login .wc-social-login .social-login .ywsl-label .row,
-    .woocommerce-form-login .wc-social-login .social-login .ywsl-label .woocommerce-account .woocommerce-EditAccountForm,
-    .woocommerce-form-login .wc-social-login .social-login .ywsl-label .woocommerce-checkout .woocommerce-additional-fields__field-wrapper,
-    .woocommerce-form-login .wc-social-login .social-login .ywsl-label .woocommerce-checkout .woocommerce-address-fields__field-wrapper,
-    .woocommerce-form-login .wc-social-login .social-login .ywsl-label .woocommerce-checkout .woocommerce-billing-fields__field-wrapper,
-    .woocommerce-form-login .wc-social-login .social-login .ywsl-label .woocommerce-checkout .woocommerce-shipping-fields__field-wrapper,
-    .woocommerce-form-login .wc-social-login .social-login .ywsl-social .product-main .summary,
-    .woocommerce-form-login .wc-social-login .social-login .ywsl-social .row,
-    .woocommerce-form-login .wc-social-login .social-login .ywsl-social .woocommerce-account .woocommerce-EditAccountForm,
-    .woocommerce-form-login .wc-social-login .social-login .ywsl-social .woocommerce-checkout .woocommerce-additional-fields__field-wrapper,
-    .woocommerce-form-login .wc-social-login .social-login .ywsl-social .woocommerce-checkout .woocommerce-address-fields__field-wrapper,
-    .woocommerce-form-login .wc-social-login .social-login .ywsl-social .woocommerce-checkout .woocommerce-billing-fields__field-wrapper,
-    .woocommerce-form-login .wc-social-login .social-login .ywsl-social .woocommerce-checkout .woocommerce-shipping-fields__field-wrapper {
-        margin: 0
-    }
-}
+
 
 .social-login__inner {
     padding: 30px 0 32px;
